@@ -6,8 +6,8 @@ body{
 
 .container{
 	margin: auto;
-	width: 960px;
-	height: 650px;
+	width: auto;
+	height: auto;
 	padding: 5px;
 }
 
@@ -16,10 +16,15 @@ body{
 	float: left;
 }
 
-.left{
+.tittle{
+	float: inherit;
+	margin-left: 20%; 
+}
+
+.panelIzq{
 	float: left;
-	width: 70%;
-	height: 50%;
+	width: 50%;
+	height: 350px;
 	border-radius: 24px;
 }
 
@@ -33,8 +38,8 @@ body{
 
 .left-button{
 	float: left;
-	width: 70%;
-	height: auto;
+	width: 50%;
+	height: 450%;
 	border-radius: 24px;
 }
 
@@ -42,11 +47,6 @@ body{
 	margin-top: 1%;
 	margin-left: 5%;
 	float: inherit;
-}
-
-.title{
-	float: inherit;
-	margin-left: 20%; 
 }
 
 .text-input, .parrafo{
@@ -111,4 +111,23 @@ body{
 	background: #D8DFE8;
 	border-radius: 24px;
 	display: none;
+}
+
+@media screen and (max-width: 800px) {
+	
+	#imgDer,
+	#copiar{
+		display: none;
+	}
+
+	.panelIzq,
+	.tittle,
+	.left-button{
+		flex-direction: column;
+		float: center;
+		width: 100%;
+		height: auto;
+		border-radius: 24px;
+	}
+
 }
